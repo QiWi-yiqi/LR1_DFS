@@ -29,7 +29,7 @@ def dfs(graph, node, visited=None, traversal_order=None):
 st.title("Depth-First Search (DFS) Traversal")
 st.write("This app performs DFS on the graph shown above.")
 
-start_node = st.text_input("Enter start node (default = '5'):", "5")
+start_node = st.text_input("Enter start node (default = 'A'):", "A")
 
 if st.button("Run DFS"):
     if start_node in graph:
@@ -40,3 +40,4 @@ if st.button("Run DFS"):
         st.error("Start node not found in graph.")
 
 st.caption("Lab Report BSD2513 | DFS Traversal Demonstration")
+
