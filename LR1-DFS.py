@@ -2,14 +2,14 @@ import streamlit as st
 st.image("LabReport_BSD2513_#1.jpg", caption="Depth-First Search Graph", use_column_width=True)
 
 graph = {
-     'A': ['B', 'D'],
-    'B': ['C', 'G'],
+    'A': ['B', 'D'],
+    'B': ['C', 'E', 'G'],
     'C': ['A'],
     'D': ['C'],
     'E': ['H'],
     'F': [],
-    'G': ['F'],
-    'H': ['F','G']
+    'G': ['F', 'H'],
+    'H': ['F']
 }
 
 def dfs(graph, node, visited=None, traversal_order=None):
@@ -40,4 +40,5 @@ if st.button("Run DFS"):
         st.error("Start node not found in graph.")
 
 st.caption("Lab Report BSD2513 | DFS Traversal Demonstration")
+
 
