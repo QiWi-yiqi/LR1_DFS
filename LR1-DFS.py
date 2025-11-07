@@ -9,7 +9,7 @@ graph = {
     'E': ['H'],
     'F': [],
     'G': ['F'],
-    'H': ['G','F']
+    'H': ['F','G']
 }
 
 def dfs(graph, node, visited=None, traversal_order=None):
@@ -40,6 +40,7 @@ if st.button("Run DFS"):
         st.error("Start node not found in graph.")
 
 st.caption("Lab Report BSD2513 | DFS Traversal Demonstration")
+
 
 
 
